@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>Angular Routing Home</title>
+ 
+</head>
+<body>
+<h1 align="center">WELCOME</h1>
+<div ng-controller="homeController" style="float: left">
+	<ul style="list-style-type: square" ng-repeat="item in items">
+		<li><a href="#{{item.item}}"> {{item.item}}</a></li>
+	
+	</ul>
+</div>
+<div>
+<ng-view> </ng-view>
+
+</div>
+
+<script type="text/javascript" src="scripts/angular/angular.js"></script>
+<script type="text/javascript" src="scripts/angular/angular-route.js"></script>
+<script type="text/javascript" src="scripts/app/app.js"></script>
+<script type="text/javascript" src="scripts/app/home/homeController.js"></script>
+<script type="text/javascript" src="scripts/app/home/homeRouter.js"></script>
+<script type="text/javascript" src="scripts/app/home/factory.js"></script>
+<script type="text/javascript" src="scripts/app/home/post/postsController.js"></script>
+<script type="text/javascript" src="scripts/app/home/post/postsDirective.js"></script>
+</body>
+</html>

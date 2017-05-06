@@ -1,0 +1,4 @@
+/**
+ * directive configuration for comments
+ */
+
