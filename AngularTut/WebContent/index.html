@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<script type="text/javascript" src="scripts/angular/angular.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/appController.js"> </script>
+<script type="text/javascript" src="scripts/appService.js"> </script>
+<style type="text/css">
+<!--
+ @IMPORT url("styles/table.css");
+-->
+</style>
+<title>Angular Tutorial</title>
+<body>
+	
+	<div ng-controller="myController">
+
+		<table>
+			<thead>
+					<tr>
+						<th>FIRST NAME</th>
+						<th>LAST NAME</th>
+					</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="name in names">
+					<td>{{name.fname}}</td>
+					<td>{{name.lname}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	
+	<hr>
+	
+	<div>
+		Search with name : <input type="text" ng-model="search.name">
+	
+		<table id="rounded-corner" summary="Cities and Captials India">
+		
+			<thead>
+				<tr>
+					<th scope="col" class="rounded-company">Country</th>
+					<th scope="col" class="rounded-q1">Name</th>
+					<th scope="col" class="rounded-q12">Abbreviation</th>
+					<th scope="col" class="rounded-q3">Area</th>
+					<th scope="col" class="rounded-q4">Capital</th>
+					<th scope="col" class="rounded-q5">Largest City</th>
+				</tr>
+			</thead>
+			 <tfoot>
+    			<tr>
+        			<td colspan="4" class="rounded-foot-left"><em>sample web service</em></td>
+        			<td></td>
+        			<td class="rounded-foot-right">&nbsp;</td>
+      		 	</tr>
+  			  </tfoot>
+			<tbody>
+				<tr ng-repeat="city in cities | filter:search">
+					<td>{{city.country}}</td>
+					<td>{{city.name}}</td>
+					<td>{{city.abbr}}</td>
+					<td>{{city.area}}</td>
+					<td>{{city.capital}}</td>
+					<td>{{city.largest_city}}</td>
+			</tbody>
+		
+		
+		</table>
+		
+	</div>
+</div>
+</body>
+</html>
