@@ -12,7 +12,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="post in posts">
+		<tr ng-repeat="post in postsCtrl.posts">
 		<td>{{post.userId}}</td><td> <a href="#posts/{{post.id}}">{{post.id}}</a> </td><td>{{post.title}}</td><td>{{post.body}}</td>
 		</tr>
 	</tbody>

@@ -6,7 +6,7 @@
 
 angular
 	.module("app")
-	.controller("homeController", function($scope){
+	.controller("homeController", function(){
 	
 		var items = [
 		            {item : "posts"},
@@ -16,7 +16,7 @@ angular
 		            {item : "todos"},
 		            {item : "users"}
 		            ];
-		$scope.items=items;
+		this.items=items;
 		
 	});
 	

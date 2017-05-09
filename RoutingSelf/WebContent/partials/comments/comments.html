@@ -1,0 +1,23 @@
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th>POST ID</th>
+				<th>ID </th>
+				<th>NAME</th>
+				<th>EMAIL</th>
+				<th>BODY</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="comment in commController.comments">
+				<td>{{comment.postId}}</td>
+				<td>{{comment.id}}</td>
+				<td>{{comment.name}}</td>
+				<td>{{comment.email}}</td>
+				<td>{{comment.body}}</td>
+				</tr>
+		</tbody>
+	</table>
+
+</div>

@@ -15,8 +15,7 @@ angular
 				template: "<post-single></post-single>"
 			})
 			.when("/comments", {
-				templateUrl: "partials/comments/comments.html",
-				controller: "commentsController"
+				template: "<comments-directive></comments-directive>"
 			})
 			.otherwise({
 				redirectTo: "/posts"

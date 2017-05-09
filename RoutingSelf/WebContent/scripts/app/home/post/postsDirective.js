@@ -6,7 +6,8 @@ angular
 	.module("app")
 	.component("postsAll", {
 		templateUrl: "partials/posts/posts.html",
-		controller: "postsController"
+		controller: "postsController",
+		controllerAs: "postsCtrl"
 	})
 	.component("postSingle", {
 		templateUrl: "partials/posts/post.html",
